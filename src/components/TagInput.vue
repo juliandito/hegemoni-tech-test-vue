@@ -63,6 +63,7 @@ function handleInputKeydown(event: KeyboardEvent): void {
     <input
       v-model="inputValue"
       type="text"
+      aria-label="Add a tag"
       placeholder="Type a tag and press Enter"
       @keydown="handleInputKeydown"
     />
@@ -70,7 +71,7 @@ function handleInputKeydown(event: KeyboardEvent): void {
     <ul class="tag-list" role="list">
       <li v-for="tag in tags" :key="tag.id" role="listitem">
         <span>{{ tag.label }}</span>
-        <button type="button" @click="removeTag(tag.id)">
+        <button type="button" :aria-label="`Remove tag ${tag.label}`" @click="removeTag(tag.id)">
           ×
         </button>
       </li>
