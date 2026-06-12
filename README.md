@@ -1,7 +1,40 @@
 # Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is a Vue 3 project with TypeScript and Vite, featuring Vue 3 `<script setup>` SFCs.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Setup
 
-For the complete manual setup steps used in this repo, see [docs/manual-setup.md](docs/manual-setup.md).
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+2. **Run the development server:**
+   ```sh
+   npm run dev
+   ```
+
+3. **Build for production:**
+   ```sh
+   npm run build
+   ```
+
+## Testing
+
+Run tests with Vitest:
+
+- **Run tests once:**
+  ```sh
+  npm run test
+  ```
+
+- **Run tests in watch mode:**
+  ```sh
+  npm run test:watch
+  ```
+
+## Notes
+* Created component based on requirements
+* Included test for the component
+* (Additional) added listing package 
+* (Additional) added simple lint workflow on push main branch 
